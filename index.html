@@ -1,189 +1,419 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mahmoud Ahmed — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Pro styles (vanilla) -->
-  <link rel="stylesheet" href="assets/pro.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mahmoud Ahmed | DevOps Engineer</title>
+<meta content="Portfolio of Mahmoud Ahmed Mohamed Abdallah — DevOps Engineer in Alexandria, Egypt." name="description"/>
+<link href="assets/img/profile.jpg" rel="icon"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+<!-- Styles -->
+<link href="assets/css/style.css" rel="stylesheet"/>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">Mahmoud Ahmed</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#training">Training</a></li>
-      <li><a href="#portfolio">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Preloader -->
+<div id="preloader">
+<div class="preloader-content">
+<div class="loader"></div>
+<div class="preloader-text">Loading Portfolio...</div>
+<div class="preloader-progress"></div>
+</div>
+</div>
+<!-- Header / Navbar -->
+<header id="header">
+<div class="container">
+<a class="logo" href="#home">Mahmoud<span>.</span></a>
+<nav id="nav-menu">
+<a class="nav-link active" href="#home">home</a>
+<a class="nav-link" href="#about">about</a>
+<a class="nav-link" href="#skills">skills</a>
+<a class="nav-link" href="#education">education</a>
+<a class="nav-link" href="#experience">experience</a>
+<a class="nav-link" href="#training">training</a>
+<a class="nav-link" href="#projects">projects</a>
+<a class="nav-link" href="#contact">contact</a>
+<a class="btn resume" href="assets/docs/Mahmoud-Ahmed-CV.pdf" rel="noopener" target="_blank">resume</a>
+</nav>
+<button aria-label="Toggle navigation" id="nav-toggle"><i class="fa fa-bars"></i></button>
+</div>
+</header>
+<!-- Hero -->
+<section class="hero" id="home">
+<div id="particles-js"></div>
+<div class="container hero-grid">
+<div class="hero-left">
+<h3>Hi There! 👋</h3>
+<h1>I'm <span>Mahmoud Ahmed</span></h1>
+<h2><span class="typed"></span></h2>
+<p class="sub">Alexandria, Egypt</p>
+<div class="hero-actions">
+<a class="btn" href="#contact">Contact me</a>
+<a class="btn outline" href="assets/docs/Mahmoud-Ahmed-CV.pdf" rel="noopener" target="_blank">Download CV</a>
+</div>
+<div aria-label="Quick social links" class="social-tiles">
+<a aria-label="GitHub" class="tile github" href="https://github.com/MahmoudAh98" rel="noopener" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+<a aria-label="LinkedIn" class="tile linkedin" href="https://www.linkedin.com/in/mahmoud-ahmed-9663241a1/" rel="noopener" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+<a aria-label="Email" class="tile email" href="mailto:mahmoud.ahmedd198@gmail.com">
+<i class="fa-regular fa-envelope"></i>
+</a>
+</div>
 
-  
-  
-  <!-- Hero -->
-  <header id="home" class="hero">
-    <img src="pic.jpg" alt="Mahmoud Ahmed" class="profile-pic">
-    <h1>Mahmoud Ahmed</h1>
-    <h2><span id="typing"></span></h2>
-    <div class="social-links">
-      <a href="mailto:mahmoud.ahmedd198@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/mahmoud-ahmed-9663241a1/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/MahmoudAh98" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-    <a href="Mahmoud Ahmed.pdf" target="_blank" class="btn">📄 Download CV</a>
-  </header>
-
-
-  <!-- About -->
-  <section id="about" class="section about-section">
-    <h2>About Me</h2>
-    <div class="about-text">
-      <p>Experienced System Administrator evolving into a DevOps Engineer, combining proven expertise in system management with modern DevOps tools and methodologies. Skilled in managing and securing Linux systems, optimizing IT infrastructure, and ensuring high availability of critical services. I specialize in automation, CI/CD pipelines, cloud platforms, and infrastructure as code, with hands-on experience in tools such as Ansible, Docker, Terraform, and Git.</p>
-      <p class="more-text">Passionate about building scalable, reliable, and automated systems that drive efficiency and continuous improvement. Currently expanding my skill set by working on containerization (Docker, Kubernetes), monitoring and observability (Prometheus, Grafana), and cloud-native solutions. My goal is to bridge the gap between development and operations, enabling faster, more reliable software delivery.</p>
-    </div>
-  </section>
-
-
-  
-  
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div><i class="devicon-linux-plain colored"></i><p>Linux</p></div>
-      <div><i class="devicon-ansible-plain colored"></i><p>Ansible</p></div>
-      <div><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
-      <div><i class="devicon-amazonwebservices-plain colored"></i><p>AWS</p></div>
-      <div><i class="devicon-jenkins-line colored"></i><p>Jenkins</p></div>
-      <div><i class="devicon-git-plain colored"></i><p>Git & GitHub</p></div>
-      <div><i class="fas fa-server"></i><p>VMware</p></div>
-      <div><i class="devicon-windows8-original colored"></i><p>Windows Server</p></div>
-      <div><i class="fas fa-terminal"></i><p>PowerShell</p></div>
-      <div><i class="devicon-python-plain colored"></i><p>Python</p></div>
-      <div><i class="fas fa-terminal"></i><p>Bash</p></div>
-    </div>
-  </section>
-
-
-  <!-- Experience -->
-  <section id="experience" class="section hidden">
-    <h2>Work Experience</h2>
-    <div class="timeline">
-      <div class="tl-item hidden">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <h3>Network / System Engineer</h3>
-          <span class="company">Alexandria Business Association — SME Project (7/2024 - Present)</span>
-          <ul>
-            <li>Troubleshooting and fixing problems related to the Infrastructure.</li>
-            <li>Managing the Domain Controller and Active Directory services.</li>
-            <li>Managing VMware virtual machines, including backup operations.</li>
-            <li>Administering and maintaining LAN/WAN networks and associated hardware/software.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Training -->
-  <section id="training" class="section hidden">
-    <h2>Training</h2>
-    <div class="timeline">
-      <div class="tl-item hidden">
-        <div class="tl-dot purple"></div>
-        <div class="tl-content">
-          <h3>DEPI DevOps Track — 6-Months Scholarship</h3>
-          <span class="company">Digital Egypt Pioneers Initiative, Alexandria (6/2025 - Present)</span>
-          <ul>
-            <li>Linux system administration (config, troubleshooting).</li>
-            <li>Docker containerization & automation with Ansible.</li>
-            <li>Git & GitHub for version control and collaboration.</li>
-            <li>CI/CD pipelines with Jenkins (build, test, deploy).</li>
-          </ul>
-        </div>
-      </div>
-      <div class="tl-item hidden">
-        <div class="tl-dot purple"></div>
-        <div class="tl-content">
-          <h3>National Telecommunication Institute (NTI)</h3>
-          <span class="company">140 hours (9/2022)</span>
-          <ul>
-            <li>Network protocols, OSI/TCP-IP models, subnetting.</li>
-            <li>Routing & switching, VLANs, dynamic routing.</li>
-            <li>Network security concepts & troubleshooting.</li>
-            <li>IP addressing & network architecture design.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="tl-item hidden">
-        <div class="tl-dot purple"></div>
-        <div class="tl-content">
-          <h3>Egypt-Japan University</h3>
-          <span class="company">30 hours (9/2021)</span>
-          <ul>
-            <li>Wireless Protocols for IoT.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section id="portfolio" class="section hidden">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Automated Deployment of Node.js Application Using Ansible</h3>
-        <p>Created an Ansible playbook to automate Node.js application deployment to remote VMs via SSH, including file transfer, environment setup, and background execution.</p>
-        <p><strong>Technology Used:</strong> <i class="devicon-ansible-plain"></i> Ansible</p>
-        <a href="https://github.com/MahmoudAh98/nodejs_app" target="_blank">View Project</a>
-      </div>
-      <div class="card">
-        <h3>Graduation Project</h3>
-        <p>Designed and simulated a Vehicular Ad-Hoc Network (VANET) for traffic safety using OMNeT++, and built a low-cost prototype with ESP32 to demonstrate real-time vehicle communication and safety alerts..</p>
-      </div>
-    </div>
-  </section>
-
-  
-  <!-- Contact -->
-  <section id="contact" class="section contact-section">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> <a href="mailto:mahmoud.ahmedd198@gmail.com">mahmoud.ahmedd198@gmail.com</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mahmoud-ahmed-9663241a1/" target="_blank">LinkedIn</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/MahmoudAh98" target="_blank">GitHub</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</p>
-      </div>
-      <div class="contact-form-wrapper">
-        <form action="https://formspree.io/f/mdklpwop" method="POST" class="contact-form" id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-          <p id="form-status" class="form-status"></p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-  <footer>
-    <p>© 2025 Mahmoud Ahmed — Portfolio</p>
-  </footer>
-
-  <script src="script.js"></script>
-
-  <!-- Pro interactions (vanilla) -->
-  <script src="assets/pro.js" defer></script>
+</div>
+<div class="hero-right">
+<div class="profile-wrap" data-tilt="" data-tilt-max="8" data-tilt-perspective="700" data-tilt-speed="400">
+<img alt="Mahmoud Ahmed portrait" src="assets/img/profile.jpg"/>
+</div>
+</div>
+</div>
+<a class="scroll-down" href="#about"><i class="fa-solid fa-angles-down"></i></a>
+</section>
+<!-- About -->
+<section class="section" id="about">
+<div class="container">
+<div class="section-title"><h2>about</h2></div>
+<div class="about-grid">
+<div class="about-text">
+<p>I used to work as a system administrator, managing servers and 
+                    keeping everything running smoothly. It was a solid role, 
+                    but over time, I started feeling stuck in a loop - updating systems,
+                    fixing issues, deploying and provisioning things manually. 
+                    It began to feel repetitive, like I was always reacting rather
+                    than improving.</p>
+<p>
+                    Then I came across the Concepts of DevOps, the idea of automating tasks,
+                    collaborating closely with developers, and speeding up how software is delivered.
+                </p>
+<p>
+                    I feel excited about where I’m headed.
+                    I’m not just maintaining systems anymore,I’m starting
+                    to imagine and shape what comes next.
+                </p>
+<div class="about-inline-contacts">
+<a aria-label="Email" class="about-chip" href="mailto:mahmoud.ahmedd198@gmail.com">
+<svg aria-hidden="true" class="about-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path>
+</svg>
+<span>mahmoud.ahmedd198@gmail.com</span>
+</a>
+<div aria-label="Location" class="about-chip">
+<svg aria-hidden="true" class="about-icon" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+</svg>
+<span>Alexandria, Egypt</span>
+</div>
+</div>
+<ul class="info">
+</ul>
+<div class="btn-row">
+<a class="btn" href="assets/docs/Mahmoud-Ahmed-CV.pdf" rel="noopener" target="_blank">download resume</a>
+</div>
+</div>
+<div class="about-stats">
+<div class="stat clickable-stat" onclick="scrollToSection('training')">
+<span>6</span><small>months</small>
+<p>DevOps training</p>
+<div class="stat-arrow">
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+<div class="stat clickable-stat" onclick="scrollToSection('experience')">
+<span>1+</span><small>years</small>
+<p>IT experience</p>
+<div class="stat-arrow">
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+<div class="stat clickable-stat" onclick="scrollToSection('projects')">
+<span>3</span><small>projects</small>
+<p>highlighted below</p>
+<div class="stat-arrow">
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills -->
+<section class="section alt" id="skills">
+<div class="container">
+<div class="section-title"><h2>skills</h2></div>
+<div class="skills-grid" id="skills-container">
+<!-- populated by skills.json -->
+</div>
+</div>
+</section>
+<!-- Education -->
+<section class="section" id="education">
+<div class="container">
+<div class="section-title"><h2>education</h2></div>
+<div class="timeline">
+<div class="tl-item">
+<span class="tl-dot"></span>
+<div class="tl-content">
+<h3>B.Sc. Electronics &amp; Communication Engineering</h3>
+<p class="meta">Alexandria University • 2017–2022</p>
+<p>Grade: Excellent with honors • GPA: 3.7</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience -->
+<section class="section alt" id="experience">
+<div class="container">
+<div class="section-title"><h2>experience</h2></div>
+<div class="timeline">
+<div class="tl-item">
+<span class="tl-dot"></span>
+<div class="tl-content">
+<h3>Network / System Engineer</h3>
+<p class="meta">Alexandria Business Association – SME Project • Jul 2024 – Present</p>
+<ul>
+<li>Troubleshoot and fix infrastructure issues.</li>
+<li>Manage Domain Controller and Active Directory.</li>
+<li>Administer VMware virtual machines and backups.</li>
+<li>Maintain LAN/WAN networks and related hardware/software.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Training -->
+<section class="section" id="training">
+<div class="container">
+<div class="section-title"><h2>training</h2></div>
+<div class="timeline">
+<div class="tl-item">
+<span class="tl-dot"></span>
+<div class="tl-content">
+<h3>DEPI DevOps Track –6‑Month Scholarship</h3>
+<p class="meta">Digital Egypt Pioneers Initiative • Jun 2025</p>
+<ul>
+<li>Linux administration, shell scripting, and system services.</li>
+<li>Version control and collaboration using Git &amp; GitHub.</li>
+<li>Containerization with Docker; images, registries, Compose.</li>
+<li>CI/CD concepts and pipelines (Jenkins &amp; GitHub Actions).</li>
+<li>Infrastructure as Code basics using Ansible and Terraform.</li>
+<li>AWS fundamentals: IAM, EC2, S3, VPC networking basics.</li>
+<li>Monitoring &amp; logging basics; deploying and troubleshooting apps.</li>
+</ul>
+</div>
+</div>
+<div class="tl-item">
+<span class="tl-dot"></span>
+<div class="tl-content">
+<h3>National Telecommunication Institute (NTI)</h3>
+<p class="meta">Networking, Routing, Switching • 140 hours • Sep 2022</p>
+<ul>
+<li>IP addressing &amp; subnetting; VLANs and inter‑VLAN routing.</li>
+<li>Switching concepts, STP, trunking, and EtherChannel.</li>
+<li>Routing protocols: static routes, RIP, OSPF fundamentals.</li>
+<li>WAN technologies and network services.</li>
+<li>Hands‑on labs: configuring routers/switches and troubleshooting.</li>
+</ul>
+</div>
+</div>
+<div class="tl-item">
+<span class="tl-dot"></span>
+<div class="tl-content">
+<h3>Egypt‑Japan University</h3>
+<p class="meta">Wireless Protocols for IoT • 30 hours • Sep 2021</p>
+<ul>
+<li>IoT communication architectures and constraints.</li>
+<li>Wireless standards overview: Wi‑Fi, Zigbee, BLE, LoRa basics.</li>
+<li>Sensor/actuator integration and gateway concepts.</li>
+<li>Security considerations and performance trade‑offs.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects / Work -->
+<section class="section" id="projects">
+<div class="container">
+<div class="section-title"><h2>projects</h2></div>
+<div class="cards">
+<!-- Project 1 -->
+<article class="card" data-tilt="" data-tilt-max="8" data-tilt-speed="400">
+<div class="card-body">
+<img alt="Node.js Deployment" class="card-img" src="assets/img/nodejs.png"/>
+<h3>Automated Node.js Deployment with Ansible</h3>
+<p>Ansible playbook to deploy a Node.js app to remote VMs via SSH: file transfer, environment setup,
+                        and background run.</p>
+<a class="btn small" href="https://github.com/MahmoudAh98/nodejs_app" rel="noopener" target="_blank">view repo</a>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="card" data-tilt="" data-tilt-max="8" data-tilt-speed="400">
+<div class="card-body">
+<img alt="VANET Project" class="card-img" src="assets/img/vanet.png"/>
+<h3>Graduation Project – VANET</h3>
+<p>Vehicle Ad-Hoc Network (VANET) for inter-vehicle wireless communication aimed at accident
+                        reduction.</p>
+<a class="btn small" href="https://github.com/Vanet-Project-Team-2022/VANET-SYSTEM_Graduation-Project" rel="noopener" target="_blank">view repo</a>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="card" data-tilt="" data-tilt-max="8" data-tilt-speed="400">
+<div class="card-body">
+<img alt="phpMyAdmin Docker Deployment" class="card-img" src="assets/img/running phpmyadmin.png"/>
+<h3>phpMyAdmin Docker Deployment with Ansible</h3>
+<p>Automated Docker installation and container deployment using Ansible. Provisions remote machines, installs Docker, and deploys MySQL database with phpMyAdmin frontend.</p>
+<a class="btn small" href="https://github.com/MahmoudAh98/phpmyadmin-ansible-dockerized/" rel="noopener" target="_blank">view repo</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="section alt contact-dark" id="contact">
+<div class="container">
+<div class="section-title"><h2>Get in Touch</h2></div>
+<div class="contact-pro">
+<div class="contact-hero glass fade-in-up" data-animate="">
+<svg aria-hidden="true" class="contact-illustration" viewbox="0 0 720 560" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="g1" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0" stop-color="var(--primary)"></stop>
+<stop offset="1" stop-color="var(--accent)"></stop>
+</lineargradient>
+</defs>
+<!-- Desk line -->
+<rect fill="var(--border)" height="2" width="560" x="80" y="360"></rect>
+<!-- Monitor outline -->
+<rect fill="none" height="180" rx="14" stroke="var(--border)" stroke-width="2" width="300" x="210" y="160"></rect>
+<rect fill="rgba(255,255,255,0.02)" height="150" rx="10" stroke="var(--border)" width="270" x="225" y="175"></rect>
+<rect fill="var(--border)" height="12" rx="6" width="250" x="235" y="185"></rect>
+<rect fill="rgba(255,255,255,0.08)" height="10" rx="5" width="180" x="235" y="210"></rect>
+<rect fill="rgba(255,255,255,0.08)" height="10" rx="5" width="220" x="235" y="232"></rect>
+<rect fill="rgba(255,255,255,0.08)" height="10" rx="5" width="150" x="235" y="254"></rect>
+<!-- Person -->
+<circle cx="150" cy="240" fill="none" r="32" stroke="url(#g1)" stroke-width="4"></circle>
+<!-- Chat bubble -->
+<rect fill="none" height="36" rx="9" stroke="url(#g1)" stroke-width="2" width="88" x="535" y="185">
+<animate attributename="y" dur="3s" repeatcount="indefinite" values="182;185;182"></animate>
+</rect>
+<circle cx="550" cy="203" fill="var(--text)" r="3"></circle>
+<circle cx="563" cy="203" fill="var(--text)" r="3"></circle>
+<circle cx="575" cy="203" fill="var(--text)" r="3"></circle>
+</svg>
+<div class="quick-contacts">
+<div class="contact-item" onclick="window.location.href='mailto:mahmoud.ahmedd198@gmail.com'">
+<div class="contact-icon">
+<i class="fa-solid fa-envelope"></i>
+</div>
+<div class="contact-content">
+<span class="contact-label">Email</span>
+<a href="mailto:mahmoud.ahmedd198@gmail.com">mahmoud.ahmedd198@gmail.com</a>
+</div>
+<div class="contact-arrow">
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+<div class="contact-item" onclick="window.location.href='tel:+201278510678'">
+<div class="contact-icon">
+<i class="fa-solid fa-phone"></i>
+</div>
+<div class="contact-content">
+<span class="contact-label">Phone</span>
+<a href="tel:+201278510678">+20 127 851 0678</a>
+</div>
+<div class="contact-arrow">
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+<div class="contact-item" onclick="window.open('https://www.linkedin.com/in/mahmoud-ahmed-9663241a1/', '_blank')">
+<div class="contact-icon">
+<i class="fa-brands fa-linkedin"></i>
+</div>
+<div class="contact-content">
+<span class="contact-label">LinkedIn</span>
+<a href="https://www.linkedin.com/in/mahmoud-ahmed-9663241a1/" target="_blank">Connect with me</a>
+</div>
+<div class="contact-arrow">
+<i class="fa-solid fa-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="contact-form-card glass fade-in-up" data-animate="">
+<form class="pro-form" id="contact-form">
+<div class="input-group">
+<span class="icon"><i class="fa-solid fa-user"></i></span>
+<input name="name" placeholder="Name" required="" type="text"/>
+</div>
+<div class="input-group">
+<span class="icon"><i class="fa-solid fa-envelope"></i></span>
+<input name="_replyto" placeholder="Email" required="" type="email"/>
+</div>
+<div class="input-group">
+<span class="icon"><i class="fa-solid fa-phone"></i></span>
+<input name="phone" placeholder="Phone" type="tel"/>
+</div>
+<div class="input-group textarea">
+<span class="icon"><i class="fa-regular fa-comment-dots"></i></span>
+<textarea name="message" placeholder="Message" required="" rows="6"></textarea>
+</div>
+<button class="btn submit-btn pulse" type="submit">
+            Submit <i class="fa-solid fa-paper-plane"></i>
+</button>
+<p id="form-status"></p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer id="footer">
+<div class="container">
+<div class="footer-cols">
+<div>
+<h3>Mahmoud's Portfolio</h3>
+<p>Thank you for visiting my portfolio. Connect with me over socials.</p>
+</div>
+<div>
+<h4>quick links</h4>
+<ul class="quick-links">
+<li><a href="#home">home</a></li>
+<li><a href="#about">about</a></li>
+<li><a href="#skills">skills</a></li>
+<li><a href="#education">education</a></li>
+<li><a href="#experience">experience</a></li>
+<li><a href="#training">training</a></li>
+<li><a href="#projects">projects</a></li>
+</ul>
+</div>
+<div>
+<h4>contact info</h4>
+<ul class="contact-info">
+<li><i class="fa-solid fa-phone"></i> +20 127 851 0678</li>
+<li><i class="fa-solid fa-envelope"></i> mahmoud.ahmedd198@gmail.com</li>
+<li><i class="fa-solid fa-location-dot"></i> Alexandria, Egypt</li>
+</ul>
+</div>
+</div>
+<p class="credit">Designed with <span>♥</span> for Mahmoud Ahmed • © <span id="year"></span></p>
+</div>
+<a aria-label="Back to top" href="#home" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+<!-- JS (vendor via CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- App -->
+<script src="assets/js/skills.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
