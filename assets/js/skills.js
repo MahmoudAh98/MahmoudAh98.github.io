@@ -145,3 +145,40 @@
     render();
   }
 })();
+
+/* === Injected by Services Section === */
+
+// Services: reveal on scroll
+(function(){
+  const els = document.querySelectorAll('.services .reveal');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.2});
+  els.forEach(el => io.observe(el));
+})();
+// Services: subtle parallax tilt (fallback if VanillaTilt is not present)
+(function(){
+  if (window.VanillaTilt) {
+    VanillaTilt.init(document.querySelectorAll('.services [data-tilt]'), {max:8, speed:400, glare: false});
+    return;
+  }
+  document.querySelectorAll('.services [data-tilt]').forEach(card => {
+    card.addEventListener('mousemove', (e)=>{
+      const r = card.getBoundingClientRect();
+      const cx = r.left + r.width/2;
+      const cy = r.top + r.height/2;
+      const dx = (e.clientX - cx) / r.width;
+      const dy = (e.clientY - cy) / r.height;
+      card.style.transform = `rotateX(${(-dy*6).toFixed(2)}deg) rotateY(${(dx*6).toFixed(2)}deg) translateY(-2px)`;
+    });
+    card.addEventListener('mouseleave', ()=>{
+      card.style.transform = '';
+    });
+  });
+})();
+
