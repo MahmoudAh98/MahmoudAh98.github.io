@@ -56,20 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedEl = document.querySelector('.typed');
   if (typedEl) {
     new Typed('.typed', {
-      strings: [
-        'DevOps Engineer',
-        'Network & System Engineer'
-      ],
-      typeSpeed: 100,
-      backSpeed: 60,
-      backDelay: 0,
+      strings: ['DevOps Engineer','Network &amp; System Engineer'],
+      typeSpeed: 65,
+      backSpeed: 30,
+      backDelay: 100,
       loop: true,
       showCursor: true,
       cursorChar: '|',
-      autoInsertCss: true,
-      smartBackspace: true,
-      fadeOut: false,
-      startDelay: 500
+      smartBackspace: false,
     });
   }
 
